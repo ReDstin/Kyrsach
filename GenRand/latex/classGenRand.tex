@@ -1,0 +1,78 @@
+\hypertarget{classGenRand}{}\doxysection{Gen\+Rand Class Reference}
+\label{classGenRand}\index{GenRand@{GenRand}}
+
+
+Программа генерации псевдослучайной последовательности на базе регистра сдвига с линейной обратной связью в конфигурации Фибоначи  
+
+
+
+
+{\ttfamily \#include $<$Gen\+Rand.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGenRand_a04b3038183533996f48bc184417460be}{set\+Reg}} (vector$<$ int $>$ reg)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classGenRand}{Gen\+Rand}}. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{classGenRand_ac0e8be62ade6164374db3bf09181abe5}{gen}} (int N)
+\begin{DoxyCompactList}\small\item\em Генерация последовательности псевдослучайных чисел \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Программа генерации псевдослучайной последовательности на базе регистра сдвига с линейной обратной связью в конфигурации Фибоначи 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGenRand_ac0e8be62ade6164374db3bf09181abe5}\label{classGenRand_ac0e8be62ade6164374db3bf09181abe5}} 
+\index{GenRand@{GenRand}!gen@{gen}}
+\index{gen@{gen}!GenRand@{GenRand}}
+\doxysubsubsection{\texorpdfstring{gen()}{gen()}}
+{\footnotesize\ttfamily vector$<$ int $>$ Gen\+Rand\+::gen (\begin{DoxyParamCaption}\item[{int}]{N }\end{DoxyParamCaption})}
+
+
+
+Генерация последовательности псевдослучайных чисел 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N} & длинна выходной последовательности (N $>$ 0) \\
+\hline
+{\em Отводная} & последовательность (24, 4, 3, 1, 0) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classGenRandError}{Gen\+Rand\+Error}},если} & произошла ошибка \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Псевдослучайная последовательность в виде вектора 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGenRand_a04b3038183533996f48bc184417460be}\label{classGenRand_a04b3038183533996f48bc184417460be}} 
+\index{GenRand@{GenRand}!setReg@{setReg}}
+\index{setReg@{setReg}!GenRand@{GenRand}}
+\doxysubsubsection{\texorpdfstring{setReg()}{setReg()}}
+{\footnotesize\ttfamily void Gen\+Rand\+::set\+Reg (\begin{DoxyParamCaption}\item[{vector$<$ int $>$}]{reg }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classGenRand}{Gen\+Rand}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em reg} & -\/ регистр состоящий из нулей и едениц \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+Регистр не может состоять только из нулей. 
+\end{DoxyWarning}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classGenRandError}{Gen\+Rand\+Error}},если} & произошла ошибка \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{GenRand_8h}{Gen\+Rand.\+h}}\item 
+\mbox{\hyperlink{GenRand_8cpp}{Gen\+Rand.\+cpp}}\end{DoxyCompactItemize}

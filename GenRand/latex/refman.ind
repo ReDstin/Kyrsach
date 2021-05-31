@@ -1,0 +1,21 @@
+\begin{theindex}
+
+  \item {gen}
+    \subitem {GenRand}, \hyperpage{7}
+  \item {GenRand}, \hyperpage{7}
+    \subitem {gen}, \hyperpage{7}
+    \subitem {setReg}, \hyperpage{8}
+  \item {GenRand.cpp}, \hyperpage{11}
+  \item {GenRand.h}, \hyperpage{11}
+  \item {GenRandError}, \hyperpage{8}
+
+  \indexspace
+
+  \item {main.cpp}, \hyperpage{13}
+
+  \indexspace
+
+  \item {setReg}
+    \subitem {GenRand}, \hyperpage{8}
+
+\end{theindex}
